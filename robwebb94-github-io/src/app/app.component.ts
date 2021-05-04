@@ -7,7 +7,7 @@ import * as AOS from 'aos';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'robwebb94-github-io';
+  title = 'Portfolio';
 
   ngOnInit(): void {
     AOS.init();
