@@ -1,0 +1,37 @@
+<div data-aos="zoom-in-up">
+  <div class="container" style="padding: 0%">
+    <img
+      style="width: 480px; height: 270px"
+      class="img-fluid image"
+      [src]="imgPath"
+    />
+    <div class="middle">
+      <ng-container *ngFor="let tech of techArray">
+        <div class="text">{{ tech }}</div>
+      </ng-container>
+    </div>
+  </div>
+  <p>
+    <a>{{ projectName }} </a>
+  </p>
+  <!-- <p class="lead" class="max-para-length">{{description}}</p> -->
+  <div style="max-height: 100px; height: 100px; overflow: overlay">
+    {{ description }}
+  </div>
+  <footer>
+    <a *ngIf="gitHubLink" [href]="gitHubLink" target="_blank">
+      <img
+        style="width: 10%"
+        class="img-fluid"
+        src="assets\\imgs\\github.png"
+      />
+    </a>
+    <a *ngIf="youtubeLink" [href]="youtubeLink" target="_blank">
+      <img
+        style="width: 6%"
+        class="img-fluid"
+        src="assets\\imgs\\youtube.png"
+      />
+    </a>
+  </footer>
+</div>
