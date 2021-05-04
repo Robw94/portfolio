@@ -5,9 +5,9 @@
   flex-wrap: wrap;
 }
 .tools-card-item {
-  width: calc(25% - 32px);
+  width: calc(40% - 32px);
   border-radius: 24px;
-  padding: 16px;
+  padding: 8px;
   color: #eef0ff;
   display: flex;
   justify-content: center;
