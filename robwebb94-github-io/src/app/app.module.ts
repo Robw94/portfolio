@@ -7,6 +7,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { ToolsComponent } from './tools/tools.component';
 import { ProjectTemplateComponent } from './portfolio/project-template/project-template.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProjectTemplateComponent } from './portfolio/project-template/project-t
     PortfolioComponent,
     IntroductionComponent,
     ToolsComponent,
-    ProjectTemplateComponent
+    ProjectTemplateComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
