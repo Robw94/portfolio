@@ -1,21 +1,12 @@
 <body id="page-top">
   <!-- Navigation -->
   <nav
-    class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+    class="navbar navbar-expand-lg navbar-dark nav-bg fixed-top"
     id="mainNav"
   >
     <div class="container">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <p class="me">Robert Webb, Web Developer</p>
+
       <div
         class="collapse navbar-collapse justify-content-center"
         id="navbarResponsive"
@@ -26,21 +17,27 @@
             data-toggle="collapse"
             data-target="#navbarResponsive"
           >
-            <a class="nav-link js-scroll-trigger" href="#introduction">About</a>
+            <a class="nav-link js-scroll-trigger nav-text" href="#introduction"
+              >About</a
+            >
           </li>
           <li
             class="nav-item"
             data-toggle="collapse"
             data-target="#navbarResponsive"
           >
-            <a class="nav-link js-scroll-trigger" href="#tools">Tools</a>
+            <a class="nav-link js-scroll-trigger nav-text" href="#tools"
+              >Tools</a
+            >
           </li>
           <li
             class="nav-item"
             data-toggle="collapse"
             data-target="#navbarResponsive"
           >
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
+            <a class="nav-link js-scroll-trigger nav-text" href="#portfolio"
+              >Projects</a
+            >
           </li>
           <!-- <li
             class="nav-item"
@@ -54,17 +51,25 @@
             data-toggle="collapse"
             data-target="#navbarResponsive"
           >
-            <a class="nav-link js-scroll-trigger" href="#contactme">Contact'</a>
+            <a class="nav-link js-scroll-trigger nav-text" href="#contactme"
+              >Contact'</a
+            >
           </li>
         </ul>
       </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
   </nav>
-  <header class="bg-secondary text-white" style="margin-top: 55px">
-    <div class="container text-center">
-      <p>Development</p>
-    </div>
-  </header>
 
   <app-introduction></app-introduction>
   <app-tools></app-tools>

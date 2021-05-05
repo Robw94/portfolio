@@ -1,0 +1,21 @@
+.navbar-dark {
+  background-color: #003A6C !important;
+
+}
+
+.navbar-dark .navbar-toggler-icon {
+  color: #EBECF0  !important;
+}
+
+.nav-link {
+  color: #EBECF0 !important;
+}
+
+p {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+.me {
+  color: #EBECF0 !important;
+  padding: 0%;
+}
