@@ -19,3 +19,8 @@ p {
   color: #EBECF0 !important;
   padding: 0%;
 }
+body {
+  min-height: 51.5rem;
+  padding-top: 2.5rem;
+  background-color: #C4D8E2;
+}

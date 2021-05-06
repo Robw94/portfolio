@@ -19,3 +19,9 @@
   object-fit: cover;
   border-radius: 8px;
 }
+
+.tools-bar {
+  color: #EBECF0;
+  background-color: #007AA5;
+  border-radius: 25px;
+}

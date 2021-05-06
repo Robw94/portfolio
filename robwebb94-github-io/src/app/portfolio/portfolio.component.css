@@ -44,17 +44,24 @@
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: white;
+    background-color: #007AA5;
+    color: #EBECF0;
     cursor: pointer;
   }
 
   /* Add a grey background color on mouse-over */
   .btn:hover {
-    background-color: #ddd;
+    background-color: #003A6C;
   }
 
   /* Add a dark background color to the active button */
   .btn.active {
-    background-color: #666;
-     color: white;
+    background-color: #003A6C;
+     color: #EBECF0;
+  }
+
+  .projects-bar {
+    color: #EBECF0;
+    background-color: #007AA5;
+    border-radius: 25px;
   }
