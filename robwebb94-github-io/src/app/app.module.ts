@@ -9,6 +9,7 @@ import { ToolsComponent } from './tools/tools.component';
 import { ProjectTemplateComponent } from './portfolio/project-template/project-template.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { LayoutComponent } from './layout/layout.component';
+import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LayoutComponent } from './layout/layout.component';
     ToolsComponent,
     ProjectTemplateComponent,
     ContactMeComponent,
-    LayoutComponent
+    LayoutComponent,
+    SplashScreenComponent
   ],
   imports: [
     BrowserModule,

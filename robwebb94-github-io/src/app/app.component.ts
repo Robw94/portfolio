@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
+import { SplashAnimationType } from './splash-screen/splash-animation-type';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,8 @@ import * as AOS from 'aos';
 })
 export class AppComponent implements OnInit {
   title = 'Portfolio';
+  animationType: typeof SplashAnimationType = SplashAnimationType;
+
 
   ngOnInit(): void {
     AOS.init({

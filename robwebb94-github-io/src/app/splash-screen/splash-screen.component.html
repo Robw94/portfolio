@@ -1,0 +1,11 @@
+<div class="app-splash-screen" [ngStyle]="{ 
+    left: windowWidth, 
+    opacity: opacityChange,
+    transition: splashTransition
+  }" *ngIf="showSplash">
+    <div class="app-splash-screen-inner">
+        <div class="app-logo"></div>
+        <div class="app-label">Robert Webb</div>
+        <div class="app-loader"></div>
+    </div>
+</div>

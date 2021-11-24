@@ -1,0 +1,22 @@
+.app-splash-screen {
+  /* background: green; */
+  background-image: url('src\assets\imgs\splash-screen-background.jpg');
+  background-size: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  transition: left 0.5s;
+}
+
+.app-label {
+  color: #fff;
+  font-size: 2.5em;
+}
