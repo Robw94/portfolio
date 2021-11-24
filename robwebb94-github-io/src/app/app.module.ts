@@ -10,6 +10,7 @@ import { ProjectTemplateComponent } from './portfolio/project-template/project-t
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
+import { NgxTypedJsModule } from 'ngx-typed-js';
 
 @NgModule({
   declarations: [
@@ -20,11 +21,12 @@ import { SplashScreenComponent } from './splash-screen/splash-screen.component';
     ProjectTemplateComponent,
     ContactMeComponent,
     LayoutComponent,
-    SplashScreenComponent
+    SplashScreenComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxTypedJsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
