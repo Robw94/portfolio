@@ -1,0 +1,46 @@
+.navbar-dark {
+    background-color: #003A6C !important;
+    position: sticky;
+  }
+  
+  .navbar-dark .navbar-toggler-icon {
+    color: #EBECF0  !important;
+  }
+  
+  .nav-link {
+    color: #EBECF0 !important;
+  }
+  
+  p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  .me {
+    color: #EBECF0 !important;
+    padding: 0%;
+  }
+  body {
+    background-color: #C4D8E2;
+  }
+  
+
+
+   .application {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+  } 
+  
+  .application-body {
+    display: flex;
+    grid-column: 2;
+    background: red;
+
+  }
+
+  @media screen and (max-width: 1024px) {
+    .application-body {
+        grid-column: 1 / span 3;
+        background: green;
+      
+    }
+    }
