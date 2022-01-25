@@ -11,6 +11,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { NgxTypedJsModule } from 'ngx-typed-js';
+import { WorkComponent } from './work/work.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
     ContactMeComponent,
     LayoutComponent,
     SplashScreenComponent,
+    WorkComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-layout',
@@ -8,6 +8,25 @@ import { Component, OnInit } from '@angular/core';
 export class LayoutComponent implements OnInit {
 
   splashScreenShowing = false;
+    
+  @ViewChild('navbar') nav!: ElementRef;
+  sticky: boolean = false;
+  elementPosition: any;
+
+  @HostListener('window:scroll', ['$event'])
+  handleScroll(){
+      const windowScroll = window.pageYOffset;
+      if(windowScroll >= this.elementPosition){        
+          this.sticky = true;
+      } else {
+          this.sticky = false;
+      }
+  }
+
+  ngAfterViewInit(){
+    this.elementPosition = this.nav.nativeElement.offsetTop;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

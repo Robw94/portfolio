@@ -4,7 +4,7 @@
 <div class="wrapper" *ngIf="!splashScreenShowing">
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-center align-items-start fixed-top">
+    <nav #navbar  class="navbar navbar-expand-lg navbar-dark justify-content-center align-items-start">
       <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,14 +34,29 @@
 
     <div class="application-body">
       <main class="application-content">
-        <app-introduction></app-introduction>
+        <!-- <app-introduction></app-introduction> -->
+        <!-- 
         <app-tools></app-tools>
         <app-portfolio></app-portfolio>
-        <app-contact-me></app-contact-me>
+        <app-contact-me></app-contact-me> -->
+        <app-work></app-work>
+        <app-portfolio></app-portfolio>
+
       </main>
     </div>
 
-    <div class="application-left">
+    <!-- <div class="application-left">
+      <ul class="social" style="list-style-type: none;">
+        <li> <a href="https://github.com/Robw94" target="_blank"><i class="fa fa-github fa-3x"
+              aria-hidden="true"></i></a>
+        <li>
+          <a href="https://www.linkedin.com/in/robert-webb-4a306093/" target="_blank"><i class="fa fa-linkedin fa-3x"
+              aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div> -->
+
+    <div class="application-right">
       <ul class="social" style="list-style-type: none;">
         <li> <a href="https://github.com/Robw94" target="_blank"><i class="fa fa-github fa-3x"
               aria-hidden="true"></i></a>

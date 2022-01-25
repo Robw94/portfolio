@@ -1,38 +1,39 @@
 <section id="portfolio">
   <div class="projects-bar pt-2 pb-2">
-      <h1 class="d-flex justify-content-center">Projects</h1>
+    <h1 class="d-flex justify-content-center">Projects</h1>
   </div>
   <div class="container">
-      <div id="myBtnContainer" class="d-flex justify-content-center mt-2 mb-3">
-          <button class="btn btn-sm active" (click)="filterProjects('all'); addActiveClass($event)"> Show all</button>
-          <button class="btn btn-sm" (click)="filterProjects('personal'); addActiveClass($event)"> Personal </button>
-          <button class="btn btn-sm" (click)="filterProjects('professional'); addActiveClass($event)"> Professional </button>
+    <div id="myBtnContainer" class="d-flex justify-content-center mt-2 mb-3">
+      <button class="btn btn-sm active" (click)="filterProjects('all'); addActiveClass($event)"> Show all</button>
+      <button class="btn btn-sm" (click)="filterProjects('personal'); addActiveClass($event)"> Personal </button>
+      <button class="btn btn-sm" (click)="filterProjects('professional'); addActiveClass($event)"> Professional
+      </button>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 personal">
+        <app-project-template [projectName]="'Portfolio'"
+          [description]="'This Portfolio was created using Angular, Hosted on github. Click the links below to view sourcecode'"
+          [gitHubLink]="'https://github.com/Robw94/robw94.github.io'" [imgPath]="'assets\\imgs\\portfolio.png'"
+          [technologies]="'Angular,TypeScript,Github,Bootstrap'">
+        </app-project-template>
       </div>
-      <div class="row">
-          <div class="col-lg-6 personal">
-              <app-project-template  [projectName]="'Portfolio'"
-                  [description]="'This Portfolio was created using Angular, Hosted on github. Click the links below to view sourcecode'"
-                  [gitHubLink]="'https://github.com/Robw94/robw94.github.io'"
-                  [imgPath]="'assets\\imgs\\portfolio.png'" [technologies]="'Angular,TypeScript,Github,Bootstrap'">
-              </app-project-template>
-          </div>
-          <div class="col-lg-6 professional">
-              <app-project-template [projectName]="'No Trace'"
-                  [description]="'No Trace is a Top-Down Stealth-Action shooter developed for PC in Unity. My role on the project consisted of creating a UI Menu system and game-ready environmental interactions, weapons, throw-able weapons and a scoring system.'"
-                  [youtubeLink]="'https://www.youtube.com/watch?v=xzMZC4_VklY'"
-                  [imgPath]="'assets\\imgs\\notrace.gif'" [technologies]="'C#,Unity,Github,UX,PCGamer'">
-              </app-project-template>
-          </div>
-          <div class="col-lg-6 personal">
-              <app-project-template [projectName]="'Flappy Flapper'" [description]="'
-              Personal Project carried out to mimic the popular game from 2015 Flappy Bird.
-              ​'" [imgPath]="'assets\\imgs\\flappyflapper.gif'" [technologies]="'C#,Unity,Github'">
-              </app-project-template>
-          </div>
-          <div class="col-lg-6 personal">
-              <!-- <app-project-template></app-project-template> -->
-          </div>
-          <!-- <div class="col-lg-6 personal"> <img class="img-fluid" src="assets\imgs\notrace.gif">
+      <div class="col-lg-6 professional">
+        <app-project-template [projectName]="'No Trace'"
+          [description]="'No Trace is a Top-Down Stealth-Action shooter developed for PC in Unity. My role on the project consisted of creating a UI Menu system and game-ready environmental interactions, weapons, throw-able weapons and a scoring system.'"
+          [youtubeLink]="'https://www.youtube.com/watch?v=xzMZC4_VklY'" [imgPath]="'assets\\imgs\\notrace.gif'"
+          [technologies]="'C#,Unity,Github,UX,PCGamer'">
+        </app-project-template>
+      </div>
+      <div class="col-lg-6 personal">
+        <app-project-template [projectName]="'Flappy Flapper'" [description]="'
+              Personal Project carried out to mimic the popular game from 2015 Flappy Bird.'"
+          [imgPath]="'assets\\imgs\\flappyflapper.gif'" [technologies]="'C#,Unity,Github'">
+        </app-project-template>
+      </div>
+      <div class="col-lg-6 personal">
+        <!-- <app-project-template></app-project-template> -->
+      </div>
+      <!-- <div class="col-lg-6 personal"> <img class="img-fluid" src="assets\imgs\notrace.gif">
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita
           quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore
           ut velit dignissimos.</p>
@@ -55,7 +56,7 @@
           quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore
           ut velit dignissimos.</p>
       </div> -->
-      </div>
+    </div>
 
   </div>
 </section>

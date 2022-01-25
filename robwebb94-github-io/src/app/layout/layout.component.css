@@ -1,7 +1,13 @@
 .navbar-dark {
-  background-color: #003A6C !important;
+  /* background-color: #003A6C !important; */
+  background-color: #05386B !important; 
   position: sticky;
 }
+/* #05386b
+#379683
+#5cdb95
+#8EE4AF
+#EDF5E1 */
 
 .navbar-dark .navbar-toggler-icon {
   color: #EBECF0 !important;
@@ -22,7 +28,9 @@ p {
 }
 
 body {
-  background-color: #C4D8E2;
+  /* background-color: #C4D8E2; */
+  background-color: #5cdb95;
+
 }
 
 
@@ -41,10 +49,19 @@ body {
   right: 0;
 }
 
+.application-right {
+  grid-column: 1;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  bottom: 70%;
+  left: 0%;
+  right: 0;
+}
+
 .application-body {
   display: flex;
   grid-column: 2;
-  background: red;
 }
 
 .social li a {
@@ -73,7 +90,13 @@ body {
 @media screen and (max-width: 1024px) {
   .application-body {
     grid-column: 1 / span 3;
-    background: green;
-
   }
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
 }
