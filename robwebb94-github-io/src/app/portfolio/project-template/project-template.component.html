@@ -12,11 +12,11 @@
     </div>
   </div>
   <p>
-    <a>{{ projectName }} </a>
+    <span> {{ projectName }}</span>
   </p>
   <!-- <p class="lead" class="max-para-length">{{description}}</p> -->
   <div style="max-height: 100px; height: 100px; overflow: overlay">
-    {{ description }}
+    <span class="text">{{ description }}</span> 
   </div>
   <footer>
     <a *ngIf="gitHubLink" [href]="gitHubLink" target="_blank">

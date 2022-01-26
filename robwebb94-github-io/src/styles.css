@@ -5,12 +5,20 @@
 #8EE4AF
 #EDF5E1 */
 
+/*
+#2C3531
+#116466
+#D9B08C
+#FFCB9A
+#D1E8E2
+*/
+
 .me {
-    color: #05386b;
+    color: #D9B08C;
 }
 
 body {
-    background: #5cdb95;
+    background: #2C3531;
     counter-reset: section;
 }
 
@@ -23,7 +31,8 @@ body {
     width: 100%;
     font-size: clamp(26px,5vw,var(--fz-heading));
     white-space: nowrap;
-    color: #EDF5E1;
+    color: #116466;
+    font-size: 30px;
 }
 .portfolio-heading::before {
     position: relative;
@@ -34,7 +43,7 @@ body {
     font-family: var(--font-mono);
     font-size: clamp(var(--fz-md),3vw,var(--fz-xl));
     font-weight: 400;
-    color: #05386b;
+    color: #116466;
 }
 .portfolio-heading::after {
     content: "";
@@ -43,5 +52,5 @@ body {
     width: 300px;
     height: 1px;
     margin-left: 20px;
-    background-color: #05386b 
+    background-color: #116466 
 }

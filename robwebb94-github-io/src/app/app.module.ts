@@ -12,6 +12,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 import { WorkComponent } from './work/work.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { WorkComponent } from './work/work.component';
     LayoutComponent,
     SplashScreenComponent,
     WorkComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

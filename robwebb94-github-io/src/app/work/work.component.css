@@ -40,6 +40,7 @@
 .tabs {
   display: flex;
   cursor: pointer;
+  border: none;
 }
 
 .tabs>ul {
@@ -56,37 +57,48 @@
 }
 
 .tabs>ul li:not(:last-child) {
-  border-bottom: 1px solid #262626;
+  /* border-bottom: 1px solid #d9d9d9; */
 }
+
+/*
+#2C3531
+#116466
+#D9B08C
+#FFCB9A
+#D1E8E2
+*/
 
 .tabs>ul li a,
 .tabs>ul li a:visited {
   display: flex;
-  border-bottom: none;
+  border: none;
   text-decoration: none;
-  background-color: #05386b;
-  color: #fff;
+  /* background-color: #116466; */
+  color: #FFCB9A;
   padding: 1rem 1.5rem;
   transition: all 0.2s ease-in-out;
   word-wrap: break-word;
   min-width: 60px;
+  
 
 }
 
 .tabs>ul li a:hover,
 .tabs>ul li a:focus,
 .tabs>ul li a:active {
-  border-bottom: none;
+  border: none;
   outline: 0;
+  border-left: 2px #116466 solid;
+
 }
 
 .tabs>ul li a.tab-active {
-  background-color: #379683;
-  color: #0067b8;
+  border: none;
+  border-left: 2px #116466 solid;
 }
 
 .tabs>ul li a:hover:not(.tab-active) {
-  background-color: #379683;
+  /* background-color: #116466; */
 }
 
 .tabs>ul li a>span {
@@ -95,7 +107,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #EDF5E1;
+  color: #FFCB9A;
 
 }
 
@@ -120,7 +132,8 @@
 
 .tabs section.section-active {
   display: block;
-  background-color: #379683;
+  background-color: #2C3531;
+  border: none;
 
 }
 
@@ -128,7 +141,7 @@
   /* transform: translateY(0); */
   animation: fadein 2s;
   animation-fill-mode: forwards;
-  color: #EDF5E1;
+  color: #FFCB9A;
   
 }
 

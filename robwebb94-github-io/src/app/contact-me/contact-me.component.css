@@ -10,16 +10,28 @@
   width: 100%;
   border-radius: 24px;
   padding: 16px;
-  color: black;
+  color: #D9B08C;
   margin-bottom: 8px;
   transition: all 0.1s ease-in-out;
+}
+
+h4 {
+  color: #D9B08C;
 }
 .contact-item:hover .select {
   border-radius: 24px;
   padding: 16px;
-  background-color: gray;
+  background-color: #D1E8E2;
   opacity: 0.5;
 }
 .icon-size {
   font-size: 40px;
 }
+
+/*
+#2C3531
+#116466
+#D9B08C
+#FFCB9A
+#D1E8E2
+*/
