@@ -1,4 +1,9 @@
 
+/* #05386b
+#379683
+#5cdb95
+#8EE4AF
+#EDF5E1 */
 .card {
   top:50%;
   left:50%;
@@ -9,7 +14,7 @@
   box-shadow:0 20px 50px rgba(0,0,0,.1);
   border-radius:10px;
   transition:0.5s;
-  background-color: #003A6C;
+  background-color: #05386b;
 }
 .card:hover {
   box-shadow:0 30px 70px rgba(0,0,0,.2);
@@ -37,12 +42,12 @@
 }
 .card .box h2 {
   font-size:20px;
-  color:#EBECF0;
+  color:#EDF5E1;
   margin:20px auto;
 }
 .card .box h2 span {
   font-size:14px;
-  background:#007AA5;
+  background:#379683;
   color:#EBECF0;
   display:inline-block;
   padding:4px 10px;

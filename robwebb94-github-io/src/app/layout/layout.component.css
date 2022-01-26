@@ -17,6 +17,13 @@
   color: #EBECF0 !important;
 }
 
+ul#nav li a span {
+   color: #EDF5E1;
+}
+ul#nav li a span:hover {
+  color: #05386b;
+}
+
 .navbar-brand {
   color: #05386b;
 }
