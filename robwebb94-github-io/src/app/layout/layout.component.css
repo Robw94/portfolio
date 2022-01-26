@@ -1,6 +1,6 @@
 .navbar-dark {
   /* background-color: #003A6C !important; */
-  background-color: #05386B !important; 
+  background-color: #5cdb95 !important; 
   position: sticky;
 }
 /* #05386b
@@ -17,20 +17,95 @@
   color: #EBECF0 !important;
 }
 
+.navbar-brand {
+  color: #05386b;
+}
+
 p {
   margin-top: 0%;
   margin-bottom: 0%;
-}
-
-.me {
-  color: #EBECF0 !important;
-  padding: 0%;
 }
 
 body {
   /* background-color: #C4D8E2; */
   background-color: #5cdb95;
 
+}
+
+.resume {
+  cursor: pointer;
+  border: 1px solid #05386b;
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  color: #EDF5E1;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+button {
+  position: relative;
+  display:block;
+  height: 45px;
+  width: 150px;
+  margin: 10px 7px;
+  padding: 5px 5px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #EDF5E1;
+  border: 2px #05386b solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.slide:after{
+  content:"Resume'";
+  position:inherit;
+  width:100%;
+  height:100%;
+  left:0;
+  text-align:center;
+  -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.slide:before {
+  content:"Download ⇓";
+  height:100%;
+  width:100%;
+  position:absolute;
+  color:#383736;
+  left:-100%;
+  opacity: 0;
+  -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.slide:hover{
+  background:#05386b;
+}
+
+.slide:hover:before{
+  left:0;
+  opacity:1;
+  color:#fff;
+}
+.slide:hover:after{
+  left:100%;
+  opacity:0;
+}
+
+.resume:hover {
+  box-shadow: inset 0px 0px 0px #2F3B47;
+  transition: all 0.5s !important;
 }
 
 
@@ -46,16 +121,6 @@ body {
   position: fixed;
   top: 70%;
   left: 7%;
-  right: 0;
-}
-
-.application-right {
-  grid-column: 1;
-  display: flex;
-  position: fixed;
-  top: 50%;
-  bottom: 70%;
-  left: 0%;
   right: 0;
 }
 
@@ -90,6 +155,9 @@ body {
 @media screen and (max-width: 1024px) {
   .application-body {
     grid-column: 1 / span 3;
+  }
+  .application-left {
+    display: none;
   }
 }
 

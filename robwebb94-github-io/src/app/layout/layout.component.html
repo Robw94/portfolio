@@ -4,11 +4,11 @@
 <div class="wrapper" *ngIf="!splashScreenShowing">
 
   <header>
-    <nav #navbar  class="navbar navbar-expand-lg navbar-dark justify-content-center align-items-start">
+    <nav #navbar class="navbar navbar-expand-lg navbar-dark justify-content-center align-items-start">
       <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <span class="navbar-brand position-absolute mx-0">Robert Webb, Web Developer</span>
+      <!-- <span class="navbar-brand position-absolute mx-0 me">Robert Webb, Web Developer</span> -->
       <div class="navbar-collapse collapse" id="navbar">
         <ul class="navbar-nav">
           <li class="nav-item" data-toggle="collapse" data-target="#navbarResponsive">
@@ -25,6 +25,11 @@
           </li>
         </ul>
       </div>
+      <!-- <button class="resume"> Resume'</button> -->
+      <button class="slide"
+        onclick="location.href='https://drive.google.com/file/d/1KvQeHdLepGVXRdExhiLOZIjcZq3_ZfHT/view?usp=sharing'">&nbsp;
+      </button>
+
     </nav>
 
   </header>
@@ -33,7 +38,7 @@
   <body id="application" class="application">
 
     <div class="application-body">
-      <main class="application-content">
+      <main>
         <!-- <app-introduction></app-introduction> -->
         <!-- 
         <app-tools></app-tools>
@@ -41,11 +46,11 @@
         <app-contact-me></app-contact-me> -->
         <app-work></app-work>
         <app-portfolio></app-portfolio>
-
       </main>
-    </div>
 
-    <!-- <div class="application-left">
+    </div>
+    <!-- 
+    <div class="application-left">
       <ul class="social" style="list-style-type: none;">
         <li> <a href="https://github.com/Robw94" target="_blank"><i class="fa fa-github fa-3x"
               aria-hidden="true"></i></a>
@@ -56,7 +61,7 @@
       </ul>
     </div> -->
 
-    <div class="application-right">
+    <!-- <div class="application-right">
       <ul class="social" style="list-style-type: none;">
         <li> <a href="https://github.com/Robw94" target="_blank"><i class="fa fa-github fa-3x"
               aria-hidden="true"></i></a>
@@ -65,8 +70,8 @@
               aria-hidden="true"></i></a>
         </li>
       </ul>
-    </div>
+    </div> -->
 
-    </body>
-    <footer>FOOTER</footer>
+  </body>
+  <footer>FOOTER</footer>
 </div>

@@ -1,9 +1,7 @@
 <section id="portfolio">
-  <div class="projects-bar pt-2 pb-2">
-    <h1 class="d-flex justify-content-center">Projects</h1>
-  </div>
-  <div class="container">
-    <div id="myBtnContainer" class="d-flex justify-content-center mt-2 mb-3">
+  <div class="portfolio-container">
+    <h1 class="portfolio-heading">Projects</h1>
+    <div id="myBtnContainer" class="row d-flex justify-content-center mt-2 mb-3">
       <button class="btn btn-sm active" (click)="filterProjects('all'); addActiveClass($event)"> Show all</button>
       <button class="btn btn-sm" (click)="filterProjects('personal'); addActiveClass($event)"> Personal </button>
       <button class="btn btn-sm" (click)="filterProjects('professional'); addActiveClass($event)"> Professional
