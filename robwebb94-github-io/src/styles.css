@@ -1,9 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+You can add global styles to this file,
+and also import other style files .me {
+  color: #D9B08C;
+}
+
+body {
+  background: #2C3531;
+  counter-reset: section;
+}
+
+.portfolio-heading {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  font-size: clamp(26px, 5vw, var(--fz-heading));
+  white-space: nowrap;
+  color: #116466;
+  font-size: 30px;
+}
+
+.portfolio-heading::before {
+  position: relative;
+  margin-right: 10px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+  font-weight: 400;
+  color: #116466;
+}
+
+.portfolio-heading::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #116466
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+}
+
+@media screen and (max-width: 550px) {
+  .portfolio-heading::after {
+    width: 0px;
+  }
+}
+
+
 /* #05386b
 #379683
 #5cdb95
 #8EE4AF
 #EDF5E1 */
+
+/*
+#0B0C10
+#1F2833
+#C5C6C7
+#66FCF1
+#45A29E
+*/
 
 /*
 #2C3531
@@ -12,45 +78,3 @@
 #FFCB9A
 #D1E8E2
 */
-
-.me {
-    color: #D9B08C;
-}
-
-body {
-    background: #2C3531;
-    counter-reset: section;
-}
-
-.portfolio-heading {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    position: relative;
-    margin: 10px 0px 40px;
-    width: 100%;
-    font-size: clamp(26px,5vw,var(--fz-heading));
-    white-space: nowrap;
-    color: #116466;
-    font-size: 30px;
-}
-.portfolio-heading::before {
-    position: relative;
-    counter-increment: section 1;
-    content: counter(section) ".";
-    margin-right: 10px;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: clamp(var(--fz-md),3vw,var(--fz-xl));
-    font-weight: 400;
-    color: #116466;
-}
-.portfolio-heading::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 300px;
-    height: 1px;
-    margin-left: 20px;
-    background-color: #116466 
-}

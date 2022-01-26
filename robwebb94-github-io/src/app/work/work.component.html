@@ -1,139 +1,56 @@
 <section id="workhistory">
   <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="tabs-container">
     <h1 class="portfolio-heading ">Work History</h1>
-    <div class="tabs-block">
-      <div id="tabs-section" class="tabs">
-        <ul class="tab-head">
-          <li #bw (click)="workClicked(berryworld,berryworldcontent)">
-            <a id='berryworldtab' #berryworld class=" tab-link tab-active"> <span class="material-icons tab-icon">
-              </span> <span class="tab-label">Berry World</span></a>
-          </li>
-          <li (click)="workClicked(datalytyx, datalytyxcontent)">
-            <a #datalytyx class="tab-link"> <span class="material-icons tab-icon"></span> <span
-                class="tab-label">Datalytyx</span></a>
-          </li>
-          <li (click)="workClicked(climatekic, climatekiccontent)">
-            <a #climatekic class="tab-link"> <span class="material-icons tab-icon"></span> <span
-                class="tab-label">Climate KIC</span></a>
-          </li>
-          <li (click)="workClicked(victrex, victrexcontent)">
-            <a #victrex class="tab-link"> <span class="material-icons tab-icon"></span> <span
-                class="tab-label">Victrex</span></a>
-          </li>
-          <li (click)="workClicked(squaremountain, squaremountaincontent)">
-            <a #squaremountain class="tab-link"> <span class="material-icons tab-icon"></span> <span
-                class="tab-label">Square Mountain</span></a>
-          </li>
-        </ul>
+    <div class="inner">
+      <div class="buttons">
   
-        <section #berryworldcontent id="berryworldcontent" class="tab-body entry-content section-active active-content">
-          <h2>Berry World</h2>
+        <button id="berryworldbutton" #berryworldbutton (click)="next(berryworldbutton,berryworldcontent)"
+          class="selected">BerryWorld</button>
+        <button id="datalytyxbutton" #datalytyxbutton (click)="next(datalytyxbutton,datalytyxcontent)">Datalytyx</button>
+      </div>
+      <div class="content-info">
+        <section #berryworldcontent id="berryworldcontent" role="tabpanel" tabindex="-1" aria-labelledby="tab-0"
+          aria-hidden="true">
+          <h3><span>Web Developer</span><span class="company">&nbsp;@&nbsp;<a href="https://www.berryworld.com/"
+                class="inline-link" rel="noopener noreferrer" target="_blank">Berry World</a></span></h3>
+          <p class="range">Jan 2019 - Present</p>
           <p>Creating Bespoke Business applications for end-users that allow them to
             accomplish everyday tasks which require to run the business.</p>
-          <ul>
-            <li>Providing Bespoke Business Applications that are used globally by
-              BerryWorld employees</li>
-            <li>Full-stack development (Angular2, C#, SQL, TypeScript, Devops)
+          <div>
+            <ul>
+              <li>Providing Bespoke Business Applications that are used globally by
+                BerryWorld employees</li>
+              <li>Full-stack development (Angular2, C#, SQL, TypeScript, Devops)
   
-            </li>
-            <li>Maintain older SOAP/RESTFUL applications
-            </li>
-          </ul>
+              </li>
+              <li>Maintain older SOAP/RESTFUL applications
+              </li>
+            </ul>
+          </div>
         </section>
+        <div #datalytyxcontent id="panel-0" role="tabpanel" tabindex="-1" aria-labelledby="tab-0" aria-hidden="true"
+          class="hidden">
+          <h3><span>Junior Developer</span><span class="company">&nbsp;@&nbsp;<a href="https://www.datalytyx.com/"
+                class="inline-link" rel="noopener noreferrer" target="_blank">Datalytyx</a></span></h3>
+          <p class="range">Jan 2019 - Present</p>
+          <div>
+            <p> In the Software Consultant position at Datalytyx I found myself working for
+              many companies creating web applications and working as a Data Engineer
+              when necessary.</p>
+            <ul>
+              <li>Creating Website Applications meeting specific requirements using a
+                selected development stack</li>
+              <li>Performing Data Engineering tasks using Talend
   
-        <section #datalytyxcontent id="datalytyxcontent" class="tab-body">
-          <h2>Datalytyx</h2>
-          <p> In the Software Consultant position at Datalytyx I found myself working for
-            many companies creating web applications and working as a Data Engineer
-            when necessary.</p>
-  
-          <ul>
-            <li>Creating Website Applications meeting specific requirements using a
-              selected development stack</li>
-            <li>Performing Data Engineering tasks using Talend
-  
-            </li>
-            <li>Working on Client sites
-            </li>
-            <li> Obtaining knowledge and creating applications that utilise cloud
-              platforms</li>
-          </ul>
-          <!-- <p>While some people don’t think that <a href="#">face primer</a> is necessary, I personally view it as a vital
-            step in my makeup routine.</p>
-          <p>Face primers’ exact effects on your skin and makeup can vary, but overall, their main purpose is to keep your
-            skin looking smooth and your makeup looking fresh all day long.</p> -->
-        </section>
-  
-        <section #climatekiccontent id="climatekiccontent" class="tab-body">
-          <h2>Climate-KIC</h2>
-          <p> In the Software Consultant position at Datalytyx I found myself working for
-            many companies creating web applications and working as a Data Engineer
-            when necessary.</p>
-  
-          <ul>
-            <li>Creating Website Applications meeting specific requirements using a
-              selected development stack</li>
-            <li>Performing Data Engineering tasks using Talend
-  
-            </li>
-            <li>Working on Client sites
-            </li>
-            <li> Obtaining knowledge and creating applications that utilise cloud
-              platforms</li>
-          </ul>
-          <!-- <p>While some people don’t think that <a href="#">face primer</a> is necessary, I personally view it as a vital
-            step in my makeup routine.</p>
-          <p>Face primers’ exact effects on your skin and makeup can vary, but overall, their main purpose is to keep your
-            skin looking smooth and your makeup looking fresh all day long.</p> -->
-        </section>
-  
-        <section #victrexcontent id="victrexcontent" class="tab-body">
-          <h2>Victrex</h2>
-          <p> In the Software Consultant position at Datalytyx I found myself working for
-            many companies creating web applications and working as a Data Engineer
-            when necessary.</p>
-  
-          <ul>
-            <li>Creating Website Applications meeting specific requirements using a
-              selected development stack</li>
-            <li>Performing Data Engineering tasks using Talend
-  
-            </li>
-            <li>Working on Client sites
-            </li>
-            <li> Obtaining knowledge and creating applications that utilise cloud
-              platforms</li>
-          </ul>
-          <!-- <p>While some people don’t think that <a href="#">face primer</a> is necessary, I personally view it as a vital
-            step in my makeup routine.</p>
-          <p>Face primers’ exact effects on your skin and makeup can vary, but overall, their main purpose is to keep your
-            skin looking smooth and your makeup looking fresh all day long.</p> -->
-        </section>
-        
-        <section #squaremountaincontent id="squaremountaincontent" class="tab-body">
-          <h2>Square Mountain</h2>
-          <p> In the Software Consultant position at Datalytyx I found myself working for
-            many companies creating web applications and working as a Data Engineer
-            when necessary.</p>
-  
-          <ul>
-            <li>Creating Website Applications meeting specific requirements using a
-              selected development stack</li>
-            <li>Performing Data Engineering tasks using Talend
-  
-            </li>
-            <li>Working on Client sites
-            </li>
-            <li> Obtaining knowledge and creating applications that utilise cloud
-              platforms</li>
-          </ul>
-          <!-- <p>While some people don’t think that <a href="#">face primer</a> is necessary, I personally view it as a vital
-            step in my makeup routine.</p>
-          <p>Face primers’ exact effects on your skin and makeup can vary, but overall, their main purpose is to keep your
-            skin looking smooth and your makeup looking fresh all day long.</p> -->
-        </section>
+              </li>
+              <li>Working on Client sites
+              </li>
+              <li> Obtaining knowledge and creating applications that utilise cloud
+                platforms</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-

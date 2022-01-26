@@ -1,14 +1,14 @@
 <!-- <app-splash-screen [duration]="3" [animationDuration]="1" (splashScreenShowing)="splashScreenShowing = $event">
 </app-splash-screen> -->
 <!-- <app-splash-screen></app-splash-screen> -->
-<div class="wrapper" *ngIf="!splashScreenShowing">
+<div id="wrapper" class="wrapper" *ngIf="!splashScreenShowing">
 
   <header>
     <nav #navbar class="navbar navbar-expand-lg navbar-dark justify-content-center align-items-start">
       <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- <span class="navbar-brand position-absolute mx-0 me">Robert Webb, Web Developer</span> -->
+      <span class="navbar-brand position-absolute mx-0 me">Rob Webb, Web Developer</span>
       <div class="navbar-collapse collapse" id="navbar">
         <ul id="nav" class="navbar-nav">
           <li class="nav-item" data-toggle="collapse" data-target="#navbarResponsive">
@@ -34,16 +34,12 @@
   </header>
 
 
-  <body id="application" class="application">
+  <div id="application" class="application">
 
     <div class="application-body">
       <main>
-        <!-- <app-introduction></app-introduction> -->
         <app-about></app-about>
-        <!-- 
-        <app-tools></app-tools>
-        <app-portfolio></app-portfolio>
-         -->
+    
         <app-work></app-work>
         <app-portfolio></app-portfolio>
         <app-contact-me></app-contact-me>
@@ -73,6 +69,6 @@
       </ul>
     </div> -->
 
-  </body>
+  </div>
   <footer>FOOTER</footer>
 </div>

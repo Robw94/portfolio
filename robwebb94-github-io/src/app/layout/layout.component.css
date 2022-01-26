@@ -3,27 +3,6 @@
   background-color: #2C3531 !important; 
   position: sticky;
 }
-/* #05386b
-#379683
-#5cdb95
-#8EE4AF
-#EDF5E1 */
-
-/*
-#0B0C10
-#1F2833
-#C5C6C7
-#66FCF1
-#45A29E
-*/
-
-/*
-#2C3531
-#116466
-#D9B08C
-#FFCB9A
-#D1E8E2
-*/
 .navbar-dark .navbar-toggler-icon {
   color: #2C3531 !important;
 }
@@ -43,27 +22,16 @@ ul#nav li a span:hover {
   color: #05386b;
 }
 
+.me {
+  color: #FFCB9A;
+}
+
 p {
   margin-top: 0%;
   margin-bottom: 0%;
 }
 
-body {
-  /* background-color: #C4D8E2; */
-  background-color: #2C3531;
 
-}
-
-.resume {
-  cursor: pointer;
-  border: 1px solid #05386b;
-  background-color: transparent;
-  height: 50px;
-  width: 200px;
-  color: #EDF5E1;
-  font-size: 1.5em;
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
-}
 button {
   position: relative;
   display:block;
@@ -174,11 +142,21 @@ button {
   background: black;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1240px) {
+  .application {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   .application-body {
-    grid-column: 1 / span 3;
+    grid-column: 1;
   }
   .application-left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .me {
     display: none;
   }
 }
@@ -189,4 +167,9 @@ button {
   overflow: hidden;
   z-index: 10;
   width: 100%;
+}
+#wrapper
+{
+    position:relative;
+    min-height:100%;
 }

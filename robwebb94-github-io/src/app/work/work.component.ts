@@ -7,10 +7,9 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
 })
 export class WorkComponent implements OnInit, AfterViewInit {
 
-  // @ViewChild('berryworld') defaultElement!: ElementRef;
-
-  private currentTab!: HTMLElement;
   private currentContent!: HTMLElement;
+
+  private curButton!: HTMLButtonElement;
 
   constructor() { }
 
@@ -18,26 +17,19 @@ export class WorkComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.currentTab = <HTMLElement>document.getElementById('berryworldtab');
-    this.currentContent = <HTMLElement>document.getElementById('berryworldcontent');
+
+    
+    this.currentContent = <any>document.getElementById('berryworldcontent');    
+    this.curButton = <HTMLButtonElement>document.getElementById('berryworldbutton');
   }
 
-
-  workClicked(tab: HTMLElement, activeContent: HTMLElement) {
-
-    // element.classList.add()
-    this.currentTab.classList.remove('tab-active');
-    this.currentContent.classList.remove('section-active');
-    this.currentContent.classList.remove('entry-content');
-    this.currentContent.classList.remove('active-content');
-
-
-    tab.classList.add('tab-active');
-    activeContent.classList.add('section-active');
-    activeContent.classList.add('active-content');
-    activeContent.classList.add('entry-content');
-    this.currentTab = tab;
+  next(btn: HTMLButtonElement, activeContent: HTMLElement) {
+    this.curButton.classList.remove('selected');
+    this.currentContent.classList.add('hidden');
+    btn.classList.add('selected');
+    activeContent.classList.remove('hidden');
     this.currentContent = activeContent;
+    this.curButton = btn;
   }
 
 }
