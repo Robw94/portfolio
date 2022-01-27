@@ -3,10 +3,14 @@
     <h1 class="portfolio-heading ">Work History</h1>
     <div class="inner">
       <div class="buttons">
-  
+
         <button id="berryworldbutton" #berryworldbutton (click)="next(berryworldbutton,berryworldcontent)"
           class="selected">BerryWorld</button>
-        <button id="datalytyxbutton" #datalytyxbutton (click)="next(datalytyxbutton,datalytyxcontent)">Datalytyx</button>
+        <button id="datalytyxbutton" #datalytyxbutton
+          (click)="next(datalytyxbutton,datalytyxcontent)">Datalytyx</button>
+        <button id="climatekicbutton" #climatekicbutton
+          (click)="next(climatekicbutton,climatekiccontent)">Climate-KIC</button>
+        <button id="victrexbutton" #victrexbutton (click)="next(victrexbutton,victrexcontent)">Victrex</button>
       </div>
       <div class="content-info">
         <section #berryworldcontent id="berryworldcontent" role="tabpanel" tabindex="-1" aria-labelledby="tab-0"
@@ -21,7 +25,7 @@
               <li>Providing Bespoke Business Applications that are used globally by
                 BerryWorld employees</li>
               <li>Full-stack development (Angular2, C#, SQL, TypeScript, Devops)
-  
+
               </li>
               <li>Maintain older SOAP/RESTFUL applications
               </li>
@@ -30,9 +34,9 @@
         </section>
         <div #datalytyxcontent id="panel-0" role="tabpanel" tabindex="-1" aria-labelledby="tab-0" aria-hidden="true"
           class="hidden">
-          <h3><span>Junior Developer</span><span class="company">&nbsp;@&nbsp;<a href="https://www.datalytyx.com/"
+          <h3><span>Software Consultant</span><span class="company">&nbsp;@&nbsp;<a href="https://www.datalytyx.com/"
                 class="inline-link" rel="noopener noreferrer" target="_blank">Datalytyx</a></span></h3>
-          <p class="range">Jan 2019 - Present</p>
+          <p class="range">Jan 2018 - Jan 2019</p>
           <div>
             <p> In the Software Consultant position at Datalytyx I found myself working for
               many companies creating web applications and working as a Data Engineer
@@ -41,12 +45,50 @@
               <li>Creating Website Applications meeting specific requirements using a
                 selected development stack</li>
               <li>Performing Data Engineering tasks using Talend
-  
               </li>
-              <li>Working on Client sites
+              <li>Using Snowflake and PowerBI to provide dashboards to clients.
+              </li>
+              <li>Working on multiple Client sites
               </li>
               <li> Obtaining knowledge and creating applications that utilise cloud
                 platforms</li>
+            </ul>
+          </div>
+
+        </div>
+        <div #climatekiccontent id="panel-0" role="tabpanel" tabindex="-1" aria-labelledby="tab-0" aria-hidden="true"
+          class="hidden">
+          <h3><span>Data Engineer</span><span class="company">&nbsp;@&nbsp;<a href="https://www.climate-kic.org/"
+                class="inline-link" rel="noopener noreferrer" target="_blank">Climate-KIC</a></span></h3>
+          <p class="range">June 2018 - Jan 2019</p>
+          <div>
+            <p> Put on a data migration project for Climate-KIC I was assigned as a Data Engineer. My task was to
+              move, curate and make data presentable and provide Dashboards that would be used by Climate-KIC to show
+              to their stakeholders</p>
+            <ul>
+              <li>Using Snowflake to extract, transform and Load data.</li>
+              <li>Using Talend Cloud to provide pipelines that run on a schedule.</li>
+              <li>Attending meetings to gather business requirements</li>
+
+            </ul>
+          </div>
+        </div>
+        <div #victrexcontent id="panel-0" role="tabpanel" tabindex="-1" aria-labelledby="tab-0" aria-hidden="true"
+          class="hidden">
+          <h3><span>Full-Stack Developer</span><span class="company">&nbsp;@&nbsp;<a href="https://www.victrex.com/en/"
+                class="inline-link" rel="noopener noreferrer" target="_blank">Climate-KIC</a></span></h3>
+          <p class="range">April 2018 - May 2018</p>
+          <div>
+            <p> I was asked to provide a Proof of Concept, that uses <a
+                href="https://azure.microsoft.com/en-gb/services/search/?&ef_id=Cj0KCQiAosmPBhCPARIsAHOen-M7Co01jrqwvpT4yT-V-q0x6F8Me4o_YsQfvfKIxRivPGFSkkLk2iMaAu4lEALw_wcB:G:s&OCID=AID2200274_SEM_Cj0KCQiAosmPBhCPARIsAHOen-M7Co01jrqwvpT4yT-V-q0x6F8Me4o_YsQfvfKIxRivPGFSkkLk2iMaAu4lEALw_wcB:G:s&gclid=Cj0KCQiAosmPBhCPARIsAHOen-M7Co01jrqwvpT4yT-V-q0x6F8Me4o_YsQfvfKIxRivPGFSkkLk2iMaAu4lEALw_wcB"
+                target="_blank">Azure Cognitive Search</a> to provide insights on the business, competitors and events
+              which were taking or have taken place.
+            </p>
+            <ul>
+              <li>Azure DevOps</li>
+              <li>SnowFlake</li>
+              <li>Used Angular + Web Api (Swagger) to display the data in a searchable grid.</li>
+
             </ul>
           </div>
         </div>

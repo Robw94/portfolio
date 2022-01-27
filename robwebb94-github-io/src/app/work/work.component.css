@@ -122,6 +122,11 @@ div ul li {
     border: 0px;
     border-bottom: 2px #FFCB9A solid;
     color: #FFCB9A;
+  
 
+  }
+  button {
+    border-left: 0px;
+    border-bottom: 2px #116466 solid;
   }
 }
