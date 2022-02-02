@@ -1,0 +1,65 @@
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px auto;
+  max-width: 1000px;
+}
+
+
+.fadeup {
+  opacity: 0;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*
+#2C3531
+#116466
+#D9B08C
+#FFCB9A
+#D1E8E2
+*/
+
+
+h4 {
+  color: #D9B08C;
+}
+
+p {
+    color: #D9B08C;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 20px;
+    max-width: 540px;
+}
+
+.heading {
+    font-size: clamp(40px, 8vw, 60px);
+    color: #116466;
+    margin: 10px;
+}
+
