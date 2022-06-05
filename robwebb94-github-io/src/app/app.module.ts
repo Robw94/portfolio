@@ -10,10 +10,10 @@ import { ProjectTemplateComponent } from './portfolio/project-template/project-t
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
-import { NgxTypedJsModule } from 'ngx-typed-js';
 import { WorkComponent } from './work/work.component';
 import { AboutComponent } from './about/about.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -31,8 +31,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
-    NgxTypedJsModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

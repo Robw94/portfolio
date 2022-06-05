@@ -1,7 +1,5 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnInit, Output, Renderer2, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SplashAnimationType } from './splash-animation-type';
-import Typed, { TypedOptions } from 'typed.js';
-import { NgxTypedJsComponent } from 'ngx-typed-js';
 
 
 @Component({
@@ -20,7 +18,6 @@ export class SplashScreenComponent implements OnInit, AfterViewInit {
   @Input() duration: number = 3;
   @Input() animationType: SplashAnimationType = SplashAnimationType.FadeOut;
   @Output() splashScreenShowing: EventEmitter<boolean> = new EventEmitter();
-  @ViewChild(NgxTypedJsComponent) typedComponent!: NgxTypedJsComponent;
 
 
   constructor(private renderer2: Renderer2) {
