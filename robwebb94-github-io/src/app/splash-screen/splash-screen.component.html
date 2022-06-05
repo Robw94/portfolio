@@ -1,16 +1,9 @@
-<img id="splashBackgound" *ngIf="showSplash" style="z-index: 1; position:absolute;" src="assets\\imgs\\splash-screen-background-2.jpg">
-<div class="app-splash-screen" [ngStyle]="{ 
+<div id="splashBackgound"  style="z-index: 1; position:absolute;" class="app-splash-screen" [ngStyle]="{ 
     left: windowWidth, 
     opacity: opacityChange,
     transition: splashTransition
   }" *ngIf="showSplash">
   <div class="app-splash-screen-inner">
-    <div class="app-logo"></div>
-    <div class="app-label" style="text-align: center;"><span
-        style="white-space:pre-wrap; background-color: rgba(0, 0, 0, 0.5)" id="typed">
-      </span>
-
-    </div>
-    <div class="app-loader"></div>
+    <img  class="pulse effect" [src]="'assets\\imgs\\logo_2.jpg'">
   </div>
 </div>

@@ -1,10 +1,6 @@
-<div>
-  <div class="container" style="padding: 0%">
-    <img
-      style="width: 480px; height: 270px"
-      class="img-fluid image"
-      [src]="imgPath"
-    />
+<div class="container mb-2 mt-2" >
+  <div style="padding: 0%">
+    <img style="width: 480px; height: 270px" class="img-fluid image" [src]="imgPath" />
     <div class="middle">
       <ng-container *ngFor="let tech of techArray">
         <div class="text">{{ tech }}</div>
@@ -16,22 +12,18 @@
   </p>
   <!-- <p class="lead" class="max-para-length">{{description}}</p> -->
   <div style="max-height: 100px; height: 100px; overflow: overlay">
-    <span class="text">{{ description }}</span> 
+    <span class="text">{{ description }}</span>
   </div>
   <footer>
-    <a *ngIf="gitHubLink" [href]="gitHubLink" target="_blank">
-      <img
-        style="width: 10%"
-        class="img-fluid"
-        src="assets\\imgs\\github.png"
-      />
-    </a>
-    <a *ngIf="youtubeLink" [href]="youtubeLink" target="_blank">
-      <img
-        style="width: 6%"
-        class="img-fluid"
-        src="assets\\imgs\\youtube.png"
-      />
-    </a>
+    <!-- <a *ngIf="gitHubLink" [href]="gitHubLink" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+    <a *ngIf="youtubeLink" [href]="youtubeLink" target=" _blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a> -->
+    <ul id="socials">
+      <li *ngIf="gitHubLink">
+        <a [href]="gitHubLink" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+      </li>
+      <li *ngIf="youtubeLink">
+        <a [href]="youtubeLink" target=" _blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+      </li>
+    </ul>
   </footer>
 </div>

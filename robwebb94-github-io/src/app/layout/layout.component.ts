@@ -7,7 +7,7 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular
 })
 export class LayoutComponent implements OnInit {
 
-  splashScreenShowing = false;
+  splashScreenShowing = true;
     
   @ViewChild('navbar') nav!: ElementRef;
   sticky: boolean = false;
@@ -24,7 +24,7 @@ export class LayoutComponent implements OnInit {
   }
 
   ngAfterViewInit(){
-    this.elementPosition = this.nav.nativeElement.offsetTop;
+    // this.elementPosition = this.nav.nativeElement.offsetTop;
   }
 
   constructor() { }
