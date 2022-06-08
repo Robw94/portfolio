@@ -1,4 +1,4 @@
-<div class="container mb-2 mt-2" >
+<div class="container mb-2 mt-2">
   <div style="padding: 0%">
     <img style="width: 480px; height: 270px" class="img-fluid image" [src]="imgPath" />
     <div class="middle">
@@ -7,6 +7,8 @@
       </ng-container>
     </div>
   </div>
+</div>
+<footer>
   <p>
     <span> {{ projectName }}</span>
   </p>
@@ -14,16 +16,14 @@
   <div style="max-height: 100px; height: 100px; overflow: overlay">
     <span class="text">{{ description }}</span>
   </div>
-  <footer>
-    <!-- <a *ngIf="gitHubLink" [href]="gitHubLink" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-    <a *ngIf="youtubeLink" [href]="youtubeLink" target=" _blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a> -->
-    <ul id="socials">
-      <li *ngIf="gitHubLink">
-        <a [href]="gitHubLink" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-      </li>
-      <li *ngIf="youtubeLink">
-        <a [href]="youtubeLink" target=" _blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
-      </li>
-    </ul>
-  </footer>
-</div>
+  <!-- <a *ngIf="gitHubLink" [href]="gitHubLink" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+  <a *ngIf="youtubeLink" [href]="youtubeLink" target=" _blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a> -->
+  <ul id="socials">
+    <li *ngIf="gitHubLink">
+      <a [href]="gitHubLink" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+    </li>
+    <li *ngIf="youtubeLink">
+      <a [href]="youtubeLink" target=" _blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+    </li>
+  </ul>
+</footer>

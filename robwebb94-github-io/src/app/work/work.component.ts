@@ -16,9 +16,7 @@ export class WorkComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
   }
 
-  ngAfterViewInit() {
-
-    
+  ngAfterViewInit() {    
     this.currentContent = <any>document.getElementById('berryworldcontent');    
     this.curButton = <HTMLButtonElement>document.getElementById('berryworldbutton');
   }
